@@ -250,6 +250,8 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    border: 1px solid red;
+
 }
 
 .section__subtitle--intro {
@@ -396,7 +398,7 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
 }
 
@@ -473,6 +475,6 @@ header {
 
 .portfolio-item-individual p {
     max-width: 600px;
-   margin-left: auto;
-   margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
