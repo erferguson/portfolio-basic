@@ -246,6 +246,7 @@ header {
 
 .intro {
     position: relative;
+    border: 1px solid yellow;
 }
 
 .intro__img {
@@ -255,11 +256,12 @@ header {
 }
 
 .section__subtitle--intro {
-    display: inline-block;
+    display: inline-block; */
 }
 
 @media (min-width: 600px) {
     .intro {
+        border: 1px solid yellow;
         display: grid;
         width: min-content;
         margin: 0 auto;
