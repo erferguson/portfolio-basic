@@ -251,12 +251,11 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
-    border: 1px solid yellow;
 
 }
 
 .section__subtitle--intro {
-    display: inline-block; */
+    display: inline-block; 
 }
 
 @media (min-width: 600px) {
@@ -395,13 +394,12 @@ header {
  
 .portfolio {
     border: 5px solid yellow;
-    display: flex;
-    align-content: center;
-    /* display: grid; */
-    /* grid-column: 1/3; */
-    /* grid-auto-flow: dense; */
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-    /* grid-gap: 10px; */
+    /* display: flex; */
+    display: grid;
+    grid-column: 1/3;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
 }
 /* auto-fit, minmax(300px, 1fr) */
 
