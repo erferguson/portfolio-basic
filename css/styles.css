@@ -394,12 +394,16 @@ header {
 }
  
 .portfolio {
-    border: 1px solid black;
-    display: grid;
-    grid-column: span;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    border: 5px solid yellow;
+    display: flex;
+    align-content: center;
+    /* display: grid; */
+    /* grid-column: 1/3; */
+    /* grid-auto-flow: dense; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    /* grid-gap: 10px; */
 }
+/* auto-fit, minmax(300px, 1fr) */
 
 .portfolio__item {
     background: var(--clr-accent);
