@@ -30,12 +30,12 @@
 }
 
 @media (min-width: 800px) {
-    :root {
+    /* :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
-    }
+    } */
 }
 
 /* General styles */
@@ -69,7 +69,13 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 /*Button*/
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+}
 .btn {
+    border: 2px solid yellow;
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
@@ -83,6 +89,7 @@ strong { font-weight: var(--fw-bold) }
     transition: transform 200ms ease-in-out;
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
+    width: 400px;
 }
 
 .btn:hover {
@@ -192,7 +199,7 @@ header {
     right: 1em;
     top: 1em;
     z-index: 1000;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .nav-open .nav {
@@ -268,7 +275,7 @@ header {
 .section__subtitle--intro {
     /* display: inline-block;  */
     border: 2px solid yellow;
-    width: 659px;
+    /* min-width: 500px; */
 }
 
 @media (min-width: 600px) {
@@ -304,17 +311,22 @@ header {
 /*  My services section  */
 
 .my-services {
+    border: 2px solid yellow;
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-dark);
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .section__title--services {
     color: var(--clr-dark);
     position: relative;
+    /* display: flex; */
+    /* align-items: center; */
 }
 
 .section__title--services::after {
@@ -325,27 +337,33 @@ header {
     margin: 0.5em auto 1em;
     background: var(--clr-accent);
     opacity: 0.25;
+    display: flex;
+    flex-direction: 
 }
 
 .services {
+    border: 10px solid yellow;
     margin-bottom: 4em;
 }
 
 .service {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     max-width: 500px;
     margin: 0 auto;
 }
 
 .service h3 {
-    color:var(--clr-accent)
-}
-.service h3 {
+    border: 4px solid orange;
     color:var(--clr-accent)
 }
 
+
 @media (min-width: 800px) {
     .services {
-        /* display: flex; */
+        display: flex;
         /* max-width: 1000px; */
         /* margin-left: auto; */
         /* margin-right: auto; */
