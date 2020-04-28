@@ -325,16 +325,16 @@ header {
 
 .section__title--services {
     color: var(--clr-dark);
-    position: relative;
-    display: flex;
-    align-items: center;
+    /* position: relative; */
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 .section__title--services::after {
     content: '';
     display: block;
     width: 2em;
-    height: 1px;
+    height: 4px;
     margin: 0.5em auto 1em;
     background: var(--clr-accent);
     opacity: 0.25;
