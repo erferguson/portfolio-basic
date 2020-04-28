@@ -252,13 +252,15 @@ header {
 /*  Intro section  */
 
 .intro {
-    position: relative;
-    border: 1px solid yellow;
+    /* position: relative; */
+    border: 10px solid yellow;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     margin: 25px;
-    align-items: baseline;
+    /* align-items: baseline; */
+    background-image: url(../img/earth-from-mars.jpg);
+    background-size: cover;
 }
 
 .intro__img {
@@ -273,9 +275,10 @@ header {
 }
 
 .section__subtitle--intro {
-    display: inline-block; 
+    /* display: inline-block;  */
     border: 2px solid yellow;
-    min-width: 500px;
+    max-width: 1000px;
+    text-align: center;
 }
 
 @media (min-width: 600px) {
