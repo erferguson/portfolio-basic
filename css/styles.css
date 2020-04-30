@@ -274,7 +274,7 @@ header {
 
 .section__subtitle--intro {
     /* display: inline-block;  */
-    max-width: 1000px;
+    max-width: 265px;
     text-align: center;
 }
 
@@ -503,12 +503,51 @@ header {
 }
 
 /*portfolio-item-individual */
-.intro-PI {
+.intro-PI1 {
     border: 2px solid yellow;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 25px;
+    height: 50vh;
+    /* align-items: flex-end; */
+    /* margin: 25px; */
+    background-image: url(../img/empty-road.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.intro-PI2 {
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* align-items: flex-end; */
+    /* margin: 25px; */
+    /* background-image: url(../img/IowaDP-logo.png); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.intro-PI3 {
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    /* align-items: flex-end; */
+    /* margin: 25px; */
+    background-image: url(../img/plane\ on\ fire.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.intro-PI4 {
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    /* align-items: flex-end; */
+    /* margin: 25px; */
     background-image: url(../img/empty-road.jpg);
     background-size: cover;
     /* background-repeat: no-repeat; */
