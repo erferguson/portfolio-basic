@@ -274,8 +274,9 @@ header {
 
 .section__subtitle--intro {
     /* display: inline-block;  */
-    max-width: 265px;
+    max-width: 500px;
     text-align: center;
+    border-radius: 5px;
 }
 
 @media (min-width: 600px) {
