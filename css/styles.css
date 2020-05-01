@@ -382,6 +382,11 @@ header {
     box-shadow: var(--bs);
 }
 
+.about-me a {
+    color: inherit;
+    text-decoration: none;
+}
+
 @media (min-width: 600px) {
     .about-me {
         /* display: grid; */
