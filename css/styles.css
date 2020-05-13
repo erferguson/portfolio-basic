@@ -251,13 +251,9 @@ header {
 /*  Intro section  */
 
 .intro {
-    /* position: relative; */
-    border: 2px solid yellow;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 25px;
-    /* align-items: baseline; */
     background-image: url(../img/earth-from-mars.jpg);
     background-size: cover;
 }
@@ -265,48 +261,37 @@ header {
 .intro__img {
     box-shadow: var(--bs);
     width: 425px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .section__title--intro {
     max-width: 1000px;
+    font-size: 2.9rem;
 }
 
 .section__subtitle--intro {
-    /* display: inline-block;  */
-    max-width: 500px;
+    width: 425px;
     text-align: center;
     border-radius: 5px;
+    font-size: .7rem;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 540px) {
     .intro {
-        /* display: grid;
-        width: min-content;
-        margin: 0 auto; */
-        /* grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content; */
+        align-items: center;
+    }
+    
+    .section__title--intro {
+        font-size: 2.2rem;
+    }
+
+    .section__subtitle--intro {
+        width: 320px;
     }
     
     .intro__img {
-        /* grid-area: img;
-        min-width: 350px;
-        position: relative;
-        z-index: 2;  */
+        width: 300px;
     }    
-    
-    .section__subtitle--intro {
-        /* align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
-        position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em); */
-    }
 }
 
 /*  My services section  */
@@ -324,9 +309,6 @@ header {
 
 .section__title--services {
     color: var(--clr-dark);
-    /* position: relative; */
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .section__title--services::after {
@@ -338,7 +320,6 @@ header {
     background: var(--clr-accent);
     opacity: 0.25;
     display: flex;
-    flex-direction: 
 }
 
 .services {
@@ -362,13 +343,6 @@ header {
 @media (min-width: 800px) {
     .services {
         display: flex;
-        /* max-width: 1000px; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-    }
-    
-    .service + .service {
-        /* margin-left: 2em; */
     }
 }
 
