@@ -518,16 +518,18 @@ header {
     padding: .5em;
 }
 
-/*portfolio-item-individual */
+/*Portfolio-item-individual */
 .intro-PI1 {
     border: 2px solid yellow;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
     /* align-items: flex-end; */
     /* margin: 25px; */
-    background-image: url(../img/empty-road.jpg);
-    background-size: cover;
+    /* background-image: url(../img/empty-road.jpg); */
+    /* background-size: cover; */
     /* background-repeat: no-repeat; */
 }
 
@@ -537,11 +539,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 10vh;
     /* align-items: flex-end; */
     /* margin: 25px; */
     /* background-image: url(../img/IowaDP-logo.png); */
-    background-size: cover;
+    /* background-size: cover; */
     /* background-repeat: no-repeat; */
 }
 
@@ -549,11 +551,13 @@ header {
     border: 2px solid yellow;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
     /* align-items: flex-end; */
     /* margin: 25px; */
-    background-image: url(../img/plane\ on\ fire.jpg);
-    background-size: cover;
+    /* background-image: url(../img/plane\ on\ fire.jpg); */
+    /* background-size: cover; */
     /* background-repeat: no-repeat; */
 }
 
@@ -561,22 +565,26 @@ header {
     border: 2px solid yellow;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
     /* align-items: flex-end; */
     /* margin: 25px; */
-    background-image: url(../img/empty-road.jpg);
-    background-size: cover;
+    /* background-image: url(../img/empty-road.jpg); */
+    /* background-size: cover; */
     /* background-repeat: no-repeat; */
 }
 .portfolio-item-individual {
     padding: 0 2em 2em;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     border: 1px solid red;
+    
 }
 
 .portfolio-item-individual img {
     width: 1000px;
+    border-radius: 10px;
 }
 
 .portfolio-item-individual p {
