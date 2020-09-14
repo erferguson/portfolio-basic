@@ -1,175 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DevEric Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-        <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                <strong>Eric Ferguson</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">keyboard proletarian</p>
-            <img src="img/erf/EFerguson - square.jpg" alt="Picture of Eric Ferguson smiling" class="intro__img">
-        </section>
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">How I Contribute</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>We have come to dedicate a portion of that field, as a final resting-place for those who here gave their lives, that that nation might live. It is altogether fitting and proper that we should do this. But, in a larger sense, we cannot dedicate, we cannot consecrate—we cannot hallow—this ground.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>Our sons, pride of our Nation, this day have set upon a mighty endeavor, a struggle to preserve our Republic, our religion, and our civilization, and to set free a suffering humanity. Lead them straight and true; give strength to their arms, stoutness to their hearts, steadfastness in their faith.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>Saved Latin</h3>
-                    <p>Convinced the Board of Trustees to keep Latin as a class while ingratiating oneself with fellow classmates to drum up support and convince students to sign the petition making Latin a required course. </p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
-            <div class="btn-div">
-                <a href="#work" class="btn">My Work</a>
-            </div>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Skills</h2>
-           <p class="section__subtitle section__subtitle--about">Technical</p>     
-            <div class="about-me__fe">
-                <h3>Front-End</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="social-list__link" >
-                    <img src="img/skills/html-5.png" alt="" class="about-me__fe-img" >
-                    <img src="img/skills/css-3.png" alt="" class="about-me__fe-img">
-                    <img src="img/skills/JS.png" alt="" class="about-me__fe-img">
-                    <img src="img/skills/React.png" alt="" class="about-me__fe-img">
-                    <img src="img/skills/redux.svg" alt="" class="about-me__fe-img">
-                </a>
-            </div>
-            <div class="about-me__be">
-                <h3>Back-End</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a class="social-list__link" >
-                    <img src="img/skills/nodejs.svg" alt="" class="about-me__be-img">
-                    <img src="img/skills/MongoDB.png" alt="" class="about-me__be-img">
-                </a>
-            </div>
-            <div class='about-me__vc'>
-                <h3>Version Control</h3>
-                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud nisi.</p>
-                <a class="social-list__link" >
-                    <img src="img/skills/Git-Icon-1788C.png" alt="" class="about-me__vc-img">
-                    <img src="img/skills/github-logo.png" alt="" class="about-me__vc-img">
-                </a>
-            </div>
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-            
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="portfolio-items/portfolio-item.html" class="portfolio__item">
-                    <img src="img/projects/preamble.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 02 -->
-                <a href="portfolio-items/portfolio-item2.html" class="portfolio__item">
-                    <img src="img/projects/ia-dem-app.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 03 -->
-                <a href="portfolio-items/portfolio-item3.html" class="portfolio__item">
-                    <img src="img/projects/plane on fire.jpg" alt="plane with one engine on fire" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 04 -->
-                <a href="portfolio-items/portfolio-item4.html" class="portfolio__item">
-                    <img src="img/projects/empty-road.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 05 -->
-                <!-- <a href="#" class="portfolio__item">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Philosophy</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Technical Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        <strong>Eric Ferguson</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        keyboard proletarian
+      </p>
+      <img
+        src="img/erf/EFerguson - square.jpg"
+        alt="Picture of Eric Ferguson smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">Philosophy</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Resuable Code</h3>
+          <p>
+            Craft one's code in a manner which is functional, 
+            dynamic and easy to follow. Let the code 
+            do the heavy lifting. 
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Keep It Simple</h3>
+          <p>
+            Break down problems by cutting them up into bit sized problems. This 
+            assists with to solve for each individual piece while keeping it simple by applying
+            more focus and efficiency. 
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Stay Humble</h3>
+          <p>
+            Humility is a key ingredient to growing and learning while pursuing new knowledge. 
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+      <div class="btn-div">
+        <a href="#work" class="btn">Projects</a>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about"> Technical Skills</h2>
+      <!-- <p class="section__subtitle section__subtitle--about"></p> -->
+      <div class="about-me__fe">
+        <h3>Front-End</h3>
+        <p></p>
+        <a class="social-list__link">
+          <img src="img/skills/html-5.png" alt="" class="about-me__fe-img" />
+          <img src="img/skills/css-3.png" alt="" class="about-me__fe-img" />
+          <img src="img/skills/JS.png" alt="" class="about-me__fe-img" />
+          <img src="img/skills/sass.png" alt="" class="about-me__fe-img" />
+          <!-- <img src="img/skills/less_logo.png" alt="" class="about-me__fe-img" /> -->
+          <img src="img/skills/React.png" alt="" class="about-me__fe-img" />
+          <img src="img/skills/redux.svg" alt="" class="about-me__fe-img" />
+        </a>
+      </div>
+      <div class="about-me__be">
+        <h3>Back-End</h3>
+        <p></p>
+        <a class="social-list__link">
+          <img src="img/skills/nodejs.svg" alt="" class="about-me__be-img" />
+          <img src="img/skills/MongoDB.png" alt="" class="about-me__be-img" />
+          <img src="img/skills/python.png" alt="" class="about-me__be-img" />
+        </a>
+      </div>
+      <div class="about-me__vc">
+        <h3>Version Control</h3>
+        <p></p>
+        <a class="social-list__link">
+          <img
+            src="img/skills/Git-Icon-1788C.png"
+            alt=""
+            class="about-me__vc-img"
+          />
+          <img
+            src="img/skills/github-logo.png"
+            alt=""
+            class="about-me__vc-img"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Projects</h2>
+        <p class="section__subtitle section__subtitle--work">
+        Recent projects are detailed below while
+        <br />
+        a comprehensive list can be found on my <a class="social-list__link" href="https://github.com">Github</a>
+        </p>
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio-items/portfolio-item.html" class="portfolio__item">
+          <img src="img/projects/preamble.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="portfolio-items/portfolio-item2.html" class="portfolio__item">
+          <img
+            src="img/projects/ia-dem-app.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="portfolio-items/portfolio-item3.html" class="portfolio__item">
+          <img
+            src="img/projects/plane on fire.jpg"
+            alt="plane with one engine on fire"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="portfolio-items/portfolio-item4.html" class="portfolio__item">
+          <img
+            src="img/projects/empty-road.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <!-- <a href="#" class="portfolio__item">
                     <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
                 </a> -->
-                
-                <!-- Portfolio item 06 -->
-                <!-- <a href="#" class="portfolio__item">
+
+        <!-- Portfolio item 06 -->
+        <!-- <a href="#" class="portfolio__item">
                     <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
                 </a> -->
-                
-                <!-- Portfolio item 07 -->
-                <!-- <a href="#" class="portfolio__item">
+
+        <!-- Portfolio item 07 -->
+        <!-- <a href="#" class="portfolio__item">
                     <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
                 </a> -->
-                
-                <!-- Portfolio item 08 -->
-                <!-- <a href="#" class="portfolio__item">
+
+        <!-- Portfolio item 08 -->
+        <!-- <a href="#" class="portfolio__item">
                     <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
                 </a> -->
-                
-                <!-- Portfolio item 09 -->
-                <!-- <a href="#" class="portfolio__item">
+
+        <!-- Portfolio item 09 -->
+        <!-- <a href="#" class="portfolio__item">
                     <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
                 </a> -->
-                
-                <!-- Portfolio item 0 0-->
-                <!-- <a href="#" class="portfolio__item">
+
+        <!-- Portfolio item 0 0-->
+        <!-- <a href="#" class="portfolio__item">
                     <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
                 </a> -->
-            </div>
-        </section>
-        
-        
-        <!-- Footer -->
-        <footer class='footer'>
-            <!-- replace with your own email address -->
-            <a href="mailto:ferguson.eric.r@gmail.com" class="footer__link">Email</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/erferguson/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        
-        <script src="js/index.js"></script>
+      </div>
+    </section>
 
-    </body>
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:ferguson.eric.r@gmail.com" class="footer__link">Email</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/erferguson/"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/erferguson">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>

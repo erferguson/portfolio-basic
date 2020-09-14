@@ -126,13 +126,13 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
+/* .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-}
+} */
 
 .section__subtitle--work {
     color: var(--clr-accent);
@@ -253,8 +253,8 @@ header {
 .intro {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    background-image: url(../img/earth-from-mars.jpg);
+    align-items: center;
+    /* background-image: url(../img/earth-from-mars.jpg); */
     background-size: cover;
 }
 
@@ -274,6 +274,10 @@ header {
     text-align: center;
     border-radius: 5px;
     font-size: .7rem;
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
 }
 
 @media (max-width: 540px) {
@@ -308,7 +312,7 @@ header {
 }
 
 .section__title--services {
-    color: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 .section__title--services::after {
@@ -316,7 +320,7 @@ header {
     display: block;
     width: 2em;
     height: 4px;
-    margin: 0.5em auto 1em;
+    margin: 0.5em auto .5em;
     background: var(--clr-accent);
     opacity: 0.25;
     display: flex;
@@ -333,6 +337,7 @@ header {
     max-width: 500px;
     margin: 0 auto;
     padding: 30px;
+    color: var(--clr-light)
 }
 
 .service h3 {
@@ -351,6 +356,21 @@ header {
     margin: 0 auto;
 }
 
+.section__title--about {
+    text-align: center;
+}
+
+.section__title--about::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 4px;
+    margin: 0.5em auto .5em;
+    background: var(--clr-accent);
+    opacity: 0.25;
+    display: flex;
+}
+
 .about-me__fe {
     /* padding: 50px; */
     margin: 100px 0;
@@ -358,6 +378,7 @@ header {
 
 .about-me__fe h3, .about-me__be h3, .about-me__vc h3 {
     text-align: center;
+    color: var(--clr-accent)
 }
 
 .about-me__fe p, .about-me__be p, .about-me__vc p{
@@ -434,6 +455,29 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
+}
+
+.section__title--work::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 4px;
+    margin: 0.5em auto .5em;
+    background: var(--clr-accent);
+    opacity: 0.25;
+    display: flex;
+}
+
+.section__subtitle--work {
+    /* font: var(--fs-body); */
+    /* font-weight: var(--fw-bold); */
+    font-size: .6rem;
+    color: var(--clr-light);
+    font-style: italic;
+}
+.section__subtitle--work a {
+    text-decoration: none;
+    color: var(--clr-accent)
 }
  
 .portfolio {
