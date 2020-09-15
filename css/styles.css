@@ -57,7 +57,6 @@ section {
 
 img {
   display: block;
-  /* max-width: 100%; */
 }
 
 strong {
@@ -130,14 +129,6 @@ h3 {
   margin: 0;
   font-size: var(--fs-h3);
 }
-
-/* .section__subtitle--intro,
-.section__subtitle--about {
-    background: var(--clr-accent);
-    padding: .25em 1em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-} */
 
 .section__subtitle--work {
   color: var(--clr-accent);
@@ -260,7 +251,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-image: url(../img/earth-from-mars.jpg); */
   background-size: cover;
 }
 
@@ -378,7 +368,6 @@ header {
 }
 
 .about-me__fe {
-  /* padding: 50px; */
   margin: 100px 0;
 }
 
@@ -404,7 +393,6 @@ header {
 }
 
 .social-list__link {
-  /* border: 2px solid white; */
   display: flex;
   justify-content: space-evenly;
 }
@@ -428,44 +416,22 @@ header {
   height: 15%;
 }
 
-@media (min-width: 600px) {
-  .about-me {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 200px; */
-    /* grid-template-areas:  */
-    /* "title img" */
-    /* "subtitle img" */
-    /* "text img"; */
-    /* grid-column-gap: 2em; */
-  }
 
-  .section__title--about {
-    /* grid-area: title; */
-  }
-
-  .section__subtitle--about {
-    /* grid-column: 1 / -1; */
-    /* grid-row: 2; */
-    /* position: relative; */
-    /* left: -1em; */
-    /* width: calc(100% + 2em); */
-    /* padding-left: 1em; */
-    /* padding-right: calc(200px + 4em); */
-  }
-
-  .about-me__img {
-    /* grid-area: img; */
-    /* position: relative; */
-    /* z-index: 2; */
-  }
-}
 
 /* My Work */
 .my-work {
+    border: 10px solid yellow;
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
 }
+
+/* @media (max-width: 950px) {
+    .my-work {
+    max-width: 480px;
+    margin: 0 auto; 
+    }
+} */
 
 .section__title--work::after {
   content: "";
@@ -479,8 +445,6 @@ header {
 }
 
 .section__subtitle--work {
-  /* font: var(--fs-body); */
-  /* font-weight: var(--fw-bold); */
   font-size: 0.6rem;
   color: var(--clr-light);
   font-style: italic;
@@ -491,18 +455,31 @@ header {
 }
 
 .portfolio {
-  border: 5px solid yellow;
+  /* border: 5px solid yellow; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
   max-height: 300px; 
 }
 
-@media (max-width: 730px) {
-  .portfolio {
-    max-width: 480px;
-    margin: 0 auto;
-  }
+@media (max-width: 960px) {
+    .portfolio {
+        /* @ 960, top boxes scale, bottom do not */
+        max-width: 480px;
+        max-height: 480px;
+        margin: 0 auto;
+      }
+}
+
+@media (max-width: 540px) {
+    .portfolio {
+        display:flex;
+        flex-direction: column;
+        /* This cant be right */
+        max-width: 1200px;
+        max-height: 1200px;
+        margin: 0 auto;
+      }
 }
 
 .portfolio__item {
@@ -517,23 +494,17 @@ header {
   width: 100%;
 }
 
-.portfolio__item:focus {
+/* .portfolio__item:focus {
   position: relative;
   z-index: 2;
-}
-
-/* .portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .75;
 } */
 
 /* FOOTER */
 .footer {
-  background: #111;
+  background: var(--clr-light);
   color: var(--clr-accent);
   text-align: center;
-  padding: 2.5em 0;
+  padding: .5em;
   font-size: var(--fs-h3);
 }
 
