@@ -576,7 +576,7 @@ header {
 .portfolio-item-individual-p {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: right;
   padding: 0 2em;
   max-width: 900px;
   margin: 0 auto;
